@@ -22,7 +22,7 @@
                     <span class="text-secondary">2,1 тыс подписчиков</span>
                 </div>
                 <div>
-                    <button class="btn-subscribe subscribe-button">Подписаться</button>
+                    <button class="btn btn-vk btn-primary">Подписаться</button>
                     <button class="btn btn-light" style="border-radius: 20px;">🤍 53</button>
                 </div>
 
@@ -96,7 +96,7 @@
                         </div>
                     </div>
                     <div>
-                        <button class="btn-subscribe subscribe-button">Подписаться</button>
+                        <button class="btn btn-vk btn-primary">Подписаться</button>
                     </div>
                 </div>
                 <div class="buttons-group d-flex flex-wrap gap-2">
@@ -104,7 +104,7 @@
                         <button class="btn btn-vk btn-light w-100">🤍 53</button>
                     </div>
                     <div class="text-secondary d-inline-block p-2 rounded-5 flex-basis-48">
-                        <button class="btn btn-vk btn-light w-100">💬 Поделиться</button>
+                        <button class="btn btn-vk btn-light w-100">Поделиться</button>
                     </div>
                     <div class="text-secondary d-inline-block p-2 rounded-5 flex-basis-48">
                         <button class="btn btn-vk btn-light w-100">➕ Добавить</button>
@@ -123,7 +123,7 @@
             </div>
 
             <button style="background-color: #f0f2f5; border: none; transition: background-color 0.2s; margin-bottom: 20px;" class="p-2 rounded-3 text-primary text-center w-100" onmousedown="this.style.backgroundColor='#d0d2d5'" onmouseup="this.style.backgroundColor='#f0f2f5'">
-                Показать предыдущие 236 комментариев.
+                Показать предыдущие 420 комментариев.
             </button>
 
             <div class="comment-section">
@@ -180,26 +180,6 @@
         </div>
     </div>
 
-    <script>
-        document.querySelectorAll('.subscribe-button').forEach(button => {
-            button.addEventListener('click', function() {
-                const isSubscribed = this.textContent === '✓ Вы подписаны';
-                document.querySelectorAll('.subscribe-button').forEach(btn => {
-                    btn.textContent = isSubscribed ? 'Подписаться' : '✓ Вы подписаны';
-                    btn.style.backgroundColor = isSubscribed ? '#4a76a8' : '#6c757d';
-                });
-            });
-        });
-    </script>
-    <script>
-              document.querySelectorAll('.show-more-link').forEach(link => {
-            link.addEventListener('click', function(event) {
-                event.preventDefault();
-                const textContainer = this.closest('.text-container');
-                textContainer.classList.toggle('expanded');
-                this.textContent = textContainer.classList.contains('expanded') ? 'Скрыть' : 'Показать всё';
-            });
-        });
-    </script>
+   
 </body>
 </html>
